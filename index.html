@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        #main-con {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            justify-content: space-evenly;
+        }
+        
+        .container {
+            font-size: 30px;
+        }
+        
+        .parent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 35%;
+            font-weight: 800;
+        }
+        
+        #acending,
+        #dcending {
+            letter-spacing: 0.85px;
+            font-size: 19px;
+            width: 350px;
+            text-align: center;
+            border: none;
+            border-bottom: 1.2px dotted white;
+            align-content: center;
+            height: 50px;
+            background-color: #3d6b6b
+        }
+        
+        #showa,
+        #showaa {
+            font-weight: 100;
+            font-size: 26px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 2px;
+        }
+        
+        #able {
+            width: 100%;
+            height: 80px;
+            align-content: center;
+            text-align: center;
+            font-weight: 900;
+            font-size: 25px;
+            letter-spacing: 7px;
+            background-color: #162a2a;
+            border-radius: 2px;
+            color: rgb(255, 246, 211);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="able"></div>
+    <div id="main-con">
+
+        <div class="container" onclick="acending()">
+
+            <div class="parent">
+                <div id="acending">Acending </div>
+                <div id="able2"></div>
+            </div>
+
+        </div>
+
+
+        <div class="container" onclick="decending()">
+
+            <div class="parent">
+                <div id="dcending">Decending </div>
+                <div id="resultShow"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
